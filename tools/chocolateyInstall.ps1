@@ -2,7 +2,8 @@
 $ErrorActionPreference = 'Stop'
 
 $packageName = 'JPEGView'
-$url = 'http://downloads.sourceforge.net/project/jpegview/jpegview/1.0.33/JPEGView_1_0_33.zip'
+$url = 'https://downloads.sourceforge.net/project/jpegview/jpegview/1.0.35.1/JPEGView_1_0_35_1.zip'
+$sha256 = '51187292181c57e4f6acc67e3d291ea0bc9082e8afb77b0638cb2ae26b95ab13'
 
 $osBitness = Get-ProcessorBits
 
@@ -25,15 +26,15 @@ $jpegviewPath = Join-Path $appPath "$($packageName).exe"
 $tmpPath = Join-Path $toolsPath tmp
 $extractPath = Join-Path $tmpPath $packageName
 
-Install-ChocolateyZipPackage $packageName $url $extractPath
-New-Item -Type Directory $appPath
+Install-ChocolateyZipPackage $packageName $url $extractPath -ChecksumType sha256 -Checksum $sha256 
+New-Item -Type Directory $appPath | Out-Null
 Move-Item (Join-Path $extractPath "JPEGView$osBitness\*") $appPath
 Remove-Item -Force -Recurse $tmpPath
 
 # XXX setting the file association is so slow (it starts another shell)
 # NB Starting on Windows 8, file associations cannot be really changed by
 #    simply writting on the registry... we, as a user, still need to
-#    right-click the file ans select the "Open With" option. so sad...
+#    right-click the file and select the "Open With" option. so sad...
 # See Application Registration at http://msdn.microsoft.com/en-us/library/windows/desktop/ee872121(v=vs.85).aspx
 # See How File Associations Work at http://msdn.microsoft.com/en-us/library/windows/desktop/dd758090(v=vs.85).aspx
 # NB this creates, at least, the following registry keys:

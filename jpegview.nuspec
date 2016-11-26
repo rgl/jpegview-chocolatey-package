@@ -2,16 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>jpegview</id>
-    <version>1.0.33.0</version>
+    <version>1.0.35.1</version>
     <title>JPEGView</title>
     <authors>David Kleiner</authors>
     <owners>Rui Lopes</owners>
-    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
-    <projectUrl>http://sourceforge.net/projects/jpegview/</projectUrl>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <packageSourceUrl>https://github.com/rgl/jpegview-chocolatey-package</packageSourceUrl>
+    <projectUrl>https://sourceforge.net/projects/jpegview/</projectUrl>
     <iconUrl>https://c.fsdn.com/allura/p/jpegview/icon</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>JPEGView is a lean, fast and highly configurable viewer/editor for JPEG, BMP, PNG, WEBP, TGA, GIF and TIFF images with a minimal GUI. Basic on-the-fly image processing is provided - allowing adjusting typical parameters as sharpness, color balance, rotation, perspective, contrast and local under-/overexposure.</description>
     <summary>Lean and fast image viewer with minimal GUI</summary>
     <tags>image</tags>
   </metadata>
+  <files>
+    <file src="tools\*" target="tools" />
+  </files>
 </package>
