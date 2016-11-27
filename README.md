@@ -9,6 +9,6 @@ NB replace the `-version` argument with the current package version.
 Run the following to publish the package to chocolatey.org:
 
 ```ps
-choco apikey -k <API-KEY> -source https://chocolatey.org/
+choco apikey -k API-KEY -source https://chocolatey.org/
 choco push -source https://chocolatey.org/
 ```
