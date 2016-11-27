@@ -13,7 +13,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>JPEGView is a lean, fast and highly configurable viewer/editor for JPEG, BMP, PNG, WEBP, TGA, GIF and TIFF images with a minimal GUI. Basic on-the-fly image processing is provided - allowing adjusting typical parameters as sharpness, color balance, rotation, perspective, contrast and local under-/overexposure.</description>
     <summary>Lean and fast image viewer with minimal GUI</summary>
-    <tags>image</tags>
+    <tags>image admin</tags>
   </metadata>
   <files>
     <file src="tools\*" target="tools" />
