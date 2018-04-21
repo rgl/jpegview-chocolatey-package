@@ -1,3 +1,6 @@
+[![Latest version released](https://img.shields.io/chocolatey/v/jpegview.svg)](https://chocolatey.org/packages/jpegview)
+[![Package downloads count](https://img.shields.io/chocolatey/dt/jpegview.svg)](https://chocolatey.org/packages/jpegview)
+
 This repository contains the [jpegview chocolatey package](https://chocolatey.org/packages/jpegview) source for the [JPEGView](https://sourceforge.net/projects/jpegview/) application.
 
 Run `choco pack` to create the chocolatey nuget package.
