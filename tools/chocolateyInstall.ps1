@@ -2,8 +2,9 @@
 $ErrorActionPreference = 'Stop'
 
 $packageName = 'JPEGView'
-$url = 'https://downloads.sourceforge.net/project/jpegview/jpegview/1.0.35.1/JPEGView_1_0_35_1.zip'
-$sha256 = '51187292181c57e4f6acc67e3d291ea0bc9082e8afb77b0638cb2ae26b95ab13'
+$url = 'https://downloads.sourceforge.net/project/jpegview/jpegview/1.0.37/JPEGView_1_0_37.zip'
+$url = 'https://sourceforge.net/projects/jpegview/files/jpegview/1.0.37/JPEGView_1.0.37.zip/download'
+$sha256 = 'f0d6c62bc7c5aa49a7a8f45294d8199355d7c1a940df5a322dc163effad22591'
 
 $osBitness = Get-ProcessorBits
 

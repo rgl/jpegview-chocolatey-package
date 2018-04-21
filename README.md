@@ -2,7 +2,7 @@ This repository contains the [jpegview chocolatey package](https://chocolatey.or
 
 Run `choco pack` to create the chocolatey nuget package.
 
-Run `choco install -y -source $pwd -f jpegview -version 1.0.35.1` to install the package.
+Run `choco install -y -source $pwd -f jpegview -version 1.0.37` to install the package.
 
 NB replace the `-version` argument with the current package version.
 
